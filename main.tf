@@ -1,6 +1,14 @@
+// initializing terraform back-end for remote state
+terraform {
+  backend "gcs" {
+    bucket = "lt2021-g1-dr-tf-state"
+    credentials = "credentials.json"
+  }
+}
+
 // connecting to gcp
 provider "google" {
-  credentials = file("gcp_service_account.json")
+  credentials = file("credentials.json")
   project     = var.project
   region      = var.region
   zone        = var.zone

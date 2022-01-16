@@ -30,5 +30,5 @@ override.tf.json
 # example: *tfplan*
 
 #GCP secret key
-gcp_service_account.json
+credentials.json
 
