@@ -32,3 +32,5 @@ override.tf.json
 #GCP secret key
 credentials.json
 
+#IDEA directory
+.idea
