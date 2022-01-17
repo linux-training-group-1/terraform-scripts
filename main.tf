@@ -21,6 +21,8 @@ module "elastic-node-1" {
   boot_project  = var.elk_machine.boot_os_project
   boot_family   = var.elk_machine.boot_os_family
   machine_type  = var.elk_machine.machine_type
+  ssh_params = var.ssh_params
+  ansible_playbook = "" //TODO: Update the ansible playbook
 }
 
 module "elastic-node-2" {
@@ -29,6 +31,8 @@ module "elastic-node-2" {
   boot_project  = var.elk_machine.boot_os_project
   boot_family   = var.elk_machine.boot_os_family
   machine_type  = var.elk_machine.machine_type
+  ssh_params = var.ssh_params
+  ansible_playbook = "" //TODO: Update the ansible playbook
 }
 
 module "elastic-node-3" {
@@ -37,6 +41,8 @@ module "elastic-node-3" {
   boot_project  = var.elk_machine.boot_os_project
   boot_family   = var.elk_machine.boot_os_family
   machine_type  = var.elk_machine.machine_type
+  ssh_params = var.ssh_params
+  ansible_playbook = "" //TODO: Update the ansible playbook
 }
 
 // creating 2 MySQL nodes for master-master replication
@@ -46,6 +52,8 @@ module "mysql-db-1" {
   boot_project  = var.mysql_machine.boot_os_project
   boot_family   = var.mysql_machine.boot_os_family
   machine_type  = var.mysql_machine.machine_type
+  ssh_params = var.ssh_params
+  ansible_playbook = "" //TODO: Update the ansible playbook
 }
 
 module "mysql-db-2" {
@@ -54,4 +62,6 @@ module "mysql-db-2" {
   boot_project  = var.mysql_machine.boot_os_project
   boot_family   = var.mysql_machine.boot_os_family
   machine_type  = var.mysql_machine.machine_type
+  ssh_params = var.ssh_params
+  ansible_playbook = "" //TODO: Update the ansible playbook
 }
