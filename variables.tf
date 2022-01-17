@@ -22,3 +22,11 @@ variable "elk_machine" {
   })
 }
 
+variable "mysql_machine" {
+  description = "parameters for the VM instance of MySQL nodes"
+  type = object({
+    machine_type    = string
+    boot_os_project = string
+    boot_os_family  = string
+  })
+}

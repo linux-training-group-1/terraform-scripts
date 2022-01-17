@@ -1,7 +1,7 @@
 // defining a linux OS for the node
 data "google_compute_image" "linux_image" {
-  project = "debian-cloud"
-  family = "debian-10"
+  project = var.boot_project
+  family = var.boot_family
 }
 
 // creating an elastic node
